@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--   注意： namespace与Mapper.java类的包名要一致-->
+<mapper namespace="com.louie.mapper.StudentMapper">
+
+    <select id="getStudent" parameterType="int" resultType="com.louie.entity.Student">
+        select id,name,t_id from student where id=#{id}
+    </select>
+
+</mapper>
